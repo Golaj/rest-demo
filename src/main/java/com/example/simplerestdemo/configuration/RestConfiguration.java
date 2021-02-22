@@ -9,11 +9,4 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RestConfiguration {
 
-    @Autowired
-    ErrorAttributes errorAttributes;
-
-    @Bean
-    AppErrorController appErrorController () {
-        return new AppErrorController(errorAttributes);
-    }
 }
