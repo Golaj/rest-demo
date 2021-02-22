@@ -10,4 +10,9 @@ public class Controller {
     public String sayHello() {
         return "Hello handsome!";
     }
+
+    @GetMapping("/error")
+    public String error() {
+        return "Mapping not found";
+    }
 }
